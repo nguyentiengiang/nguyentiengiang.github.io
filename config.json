@@ -1,0 +1,8 @@
+{
+   "baseURL": "http://example.org/",
+   "languageCode": "vi-vn",
+   "title": "My New Hugo Site",
+
+   "DefaultContentLanguage": "vi"
+
+}
