@@ -151,10 +151,13 @@
 		e.preventDefault();
 		$.ajax({
 			url: "https://script.google.com/macros/s/AKfycbzyFXNCVNlFz_q93jDppZgAspYJSwtti0G47n3w8o6tJoxYij7D/exec",
-			method: "POST",
+			method: "GET",
 			dataType: "json",
 			data: formContact.serialize(),
 			success: function(response){
+				$("#contact-name").val("");
+				$("#contact-email").val("");
+				$("#contact-message").val("");
 				$("#result-contact").html("I will get back to you as soon as possible !!!");
 			}
 		}).always(function() {
