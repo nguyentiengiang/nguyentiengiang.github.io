@@ -1,7 +1,12 @@
 {
    "baseURL": "http://example.org/",
    "languageCode": "vi-vn",
-   "title": "My New Hugo Site",
+   "title": "Nguyễn Tiến Giang | Trang cá nhân",
+   "params": {
+      "keywords": "GiangNT,IT,it",
+      "description": "Trang cá nhân Nguyễn Tiến Giang, nơi để những thứ linh tinh về tech, IT, web",
+      "author": "Nguyễn Tiến Giang"
+   },
 
    "DefaultContentLanguage": "vi"
 
