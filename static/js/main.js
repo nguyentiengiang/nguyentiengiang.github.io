@@ -1,96 +1,99 @@
-;(function () {
-	
+;
+(function () {
+
 	'use strict';
 
 	var isMobile = {
-		Android: function() {
+		Android: function () {
 			return navigator.userAgent.match(/Android/i);
 		},
-			BlackBerry: function() {
+		BlackBerry: function () {
 			return navigator.userAgent.match(/BlackBerry/i);
 		},
-			iOS: function() {
+		iOS: function () {
 			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
 		},
-			Opera: function() {
+		Opera: function () {
 			return navigator.userAgent.match(/Opera Mini/i);
 		},
-			Windows: function() {
+		Windows: function () {
 			return navigator.userAgent.match(/IEMobile/i);
 		},
-			any: function() {
+		any: function () {
 			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 		}
 	};
 
-	
-	var fullHeight = function() {
+
+	var fullHeight = function () {
 
 		//if ( !isMobile.any() ) {
+		$('.js-fullheight').css('height', $(window).height());
+		$(window).resize(function () {
 			$('.js-fullheight').css('height', $(window).height());
-			$(window).resize(function(){
-				$('.js-fullheight').css('height', $(window).height());
-			});
+		});
 		//}
 	};
 
 	// Parallax
-	var parallax = function() {
+	var parallax = function () {
 		$(window).stellar();
 	};
 
-	var contentWayPoint = function() {
+	var contentWayPoint = function () {
 		var i = 0;
-		$('.animate-box').waypoint( function( direction ) {
+		$('.animate-box').waypoint(function (direction) {
 
-			if( direction === 'down' && !$(this.element).hasClass('animated-fast') ) {
-				
+			if (direction === 'down' && !$(this.element).hasClass('animated-fast')) {
+
 				i++;
 
 				$(this.element).addClass('item-animate');
-				setTimeout(function(){
+				setTimeout(function () {
 
-					$('body .animate-box.item-animate').each(function(k){
+					$('body .animate-box.item-animate').each(function (k) {
 						var el = $(this);
-						setTimeout( function () {
+						setTimeout(function () {
 							var effect = el.data('animate-effect');
-							if ( effect === 'fadeIn') {
+							if (effect === 'fadeIn') {
 								el.addClass('fadeIn animated-fast');
-							} else if ( effect === 'fadeInLeft') {
+							} else if (effect === 'fadeInLeft') {
 								el.addClass('fadeInLeft animated-fast');
-							} else if ( effect === 'fadeInRight') {
+							} else if (effect === 'fadeInRight') {
 								el.addClass('fadeInRight animated-fast');
 							} else {
 								el.addClass('fadeInUp animated-fast');
 							}
 
 							el.removeClass('item-animate');
-						},  k * 100, 'easeInOutExpo' );
+						}, k * 100, 'easeInOutExpo');
 					});
-					
+
 				}, 50);
-				
+
 			}
 
-		} , { offset: '85%' } );
+		}, {
+			offset: '85%'
+		});
 	};
 
 
 
-	var goToTop = function() {
+	var goToTop = function () {
 
-		$('.js-gotop').on('click', function(event){
-			
+		$('.js-gotop').on('click', function (event) {
+
 			event.preventDefault();
 
 			$('html, body').animate({
 				scrollTop: $('html').offset().top
 			}, 500, 'easeInOutExpo');
-			
+
 			return false;
 		});
 
-		$(window).scroll(function(){
+		$(window).scroll(function () {
 
 			var $win = $(window);
 			if ($win.scrollTop() > 200) {
@@ -100,42 +103,71 @@
 			}
 
 		});
-	
+
 	};
 
-	var pieChart = function() {
-		$('.chart').easyPieChart({
+	var pieChart = function () {
+		$('.chart-primary').easyPieChart({
+			scaleColor: false,
+			lineWidth: 4,
+			lineCap: 'butt',
+			barColor: '#ff0000',
+			trackColor: "#f5f5f5",
+			size: 160,
+			animate: 1000
+		});
+		$('.chart-intermediate').easyPieChart({
+			scaleColor: false,
+			lineWidth: 4,
+			lineCap: 'butt',
+			barColor: '#00ff00',
+			trackColor: "#f5f5f5",
+			size: 160,
+			animate: 1000
+		});
+		$('.chart-advance').easyPieChart({
 			scaleColor: false,
 			lineWidth: 4,
 			lineCap: 'butt',
 			barColor: '#FF9000',
-			trackColor:	"#f5f5f5",
+			trackColor: "#f5f5f5",
+			size: 160,
+			animate: 1000
+		});
+		$('.chart-professional').easyPieChart({
+			scaleColor: false,
+			lineWidth: 4,
+			lineCap: 'butt',
+			barColor: '#FF9000',
+			trackColor: "#f5f5f5",
 			size: 160,
 			animate: 1000
 		});
 	};
 
-	var skillsWayPoint = function() {
-		if ($('#fh5co-skills').length > 0 ) {
-			$('#fh5co-skills').waypoint( function( direction ) {
-										
-				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-					setTimeout( pieChart , 400);					
+	var skillsWayPoint = function () {
+		if ($('#fh5co-skills').length > 0) {
+			$('#fh5co-skills').waypoint(function (direction) {
+
+				if (direction === 'down' && !$(this.element).hasClass('animated')) {
+					setTimeout(pieChart, 400);
 					$(this.element).addClass('animated');
 				}
-			} , { offset: '90%' } );
+			}, {
+				offset: '90%'
+			});
 		}
 
 	};
 
 
 	// Loading page
-	var loaderPage = function() {
+	var loaderPage = function () {
 		$(".fh5co-loader").fadeOut("slow");
 	};
 
-	
-	$(function(){
+
+	$(function () {
 		contentWayPoint();
 		goToTop();
 		loaderPage();
@@ -147,21 +179,21 @@
 
 	// Send contact
 	var formContact = $('form#contact-me')
-	$('#contact-me-btn').on('click', function(e) {
+	$('#contact-me-btn').on('click', function (e) {
 		e.preventDefault();
 		$.ajax({
 			url: "https://script.google.com/macros/s/AKfycbzyFXNCVNlFz_q93jDppZgAspYJSwtti0G47n3w8o6tJoxYij7D/exec",
 			method: "GET",
 			dataType: "json",
 			data: formContact.serialize(),
-			success: function(response){
+			success: function (response) {
 				$("#contact-name").val("");
 				$("#contact-email").val("");
 				$("#contact-message").val("");
 				$("#result-contact").html("I will get back to you as soon as possible !!!");
 			}
-		}).always(function() {
-			setTimeout(function(){
+		}).always(function () {
+			setTimeout(function () {
 				$("#result-contact").html("");
 			}, 5000);
 		});
