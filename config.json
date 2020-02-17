@@ -1,13 +1,34 @@
 {
-   "baseURL": "http://example.org/",
+   "baseURL": "https://nguyentiengiang.com/",
    "languageCode": "vi-vn",
-   "title": "Nguyễn Tiến Giang | Trang cá nhân",
-   "params": {
-      "keywords": "GiangNT,IT,it",
-      "description": "Trang cá nhân Nguyễn Tiến Giang, nơi để những thứ linh tinh về tech, IT, web",
-      "author": "Nguyễn Tiến Giang"
-   },
 
-   "DefaultContentLanguage": "vi"
+
+   "defaultContentLanguage": "vi",
+   "languages": {
+      "vi": {
+         "contentDir": "content/vi",
+         "dataDir": "data/vi",
+         "languageName": "Vietnam",
+         "title": "Nguyễn Tiến Giang | Trang cá nhân",
+         "params": {
+            "keywords": "GiangNT,IT,it",
+            "description": "Trang cá nhân Nguyễn Tiến Giang, nơi để những thứ linh tinh về tech, IT, web",
+            "author": "Nguyễn Tiến Giang"
+         }
+      },
+      "en": {
+         "contentDir": "content/en",
+         "dataDir": "data/en",
+         "languageName": "English",
+         "title": "Nguyễn Tiến Giang | Personal page",
+         "params": {
+            "keywords": "GiangNT,IT,it",
+            "description": "GiangNT personal page, bullshit about tech, IT, web",
+            "author": "Giang Nguyễn Tiến"
+         }
+      }
+   },
+   "enableEmoji": true,
+   "enableRobotsTXT": true
 
 }

@@ -428,7 +428,7 @@ figure {
 }
 
 #fh5co-about .fh5co-social-icons li {
-  padding: 0;
+  padding: 5px;
   list-style: none;
   display: -moz-inline-stack;
   display: inline-block;
