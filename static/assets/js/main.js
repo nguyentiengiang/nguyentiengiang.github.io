@@ -199,4 +199,9 @@
 		});
 	});
 
+	$('#changeLanguage').on('change', function(e) {
+		var lang = $(this).val();
+		window.location.replace(window.location.origin + "/" + lang);
+	});
+
 }());
