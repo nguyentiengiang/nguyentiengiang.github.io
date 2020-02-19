@@ -119,6 +119,7 @@ figure {
   left: 0;
   right: 0;
   background: #6baf5096;
+  z-index: 999;
 }
 
 #fh5co-header .display-t,
