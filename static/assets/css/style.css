@@ -106,7 +106,7 @@ figure {
   width: 100%;
 }
 
-#fh5co-header .overlay .changeLang {
+#fh5co-header .changeLang {
   padding-top: 1%;
   padding-left: 1%;
 }
@@ -119,7 +119,6 @@ figure {
   left: 0;
   right: 0;
   background: #6baf5096;
-  z-index: 999;
 }
 
 #fh5co-header .display-t,
