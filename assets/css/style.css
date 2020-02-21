@@ -234,13 +234,13 @@ figure {
   background-repeat: no-repeat;
   position: relative;
   height: 192px;
-  width: 322px;
+  width: 192px;
   margin: 0 auto;
   margin-bottom: 30px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
-  border-radius: 20%;
+  border-radius: 50%;
 }
 
 #fh5co-header .display-tc .fh5co-social-icons li a,
