@@ -44,6 +44,7 @@
     "education": [
         {
             "title": "Certified ScrumMaster® (CSM®)",
+            "certUrl": "http://bcert.me/sqpvwvju",
             "school": "Agile Academy Vietnam",
             "schoolUrl": "https://hocvienagile.com",
             "time": "20/08/2018",
@@ -51,6 +52,7 @@
         },
         {
             "title": "IT Masters Short Course - Cross-Platform Mobile App Development",
+            "certUrl": "https://www.linkedin.com/in/nguyentiengiang/",
             "school": "Charles Sturt University",
             "schoolUrl": "https://www.csu.edu.au",
             "time": "20/08/2018",
@@ -58,6 +60,7 @@
         },
         {
             "title": "Computer Engineer",
+            "certUrl": "https://www.linkedin.com/in/nguyentiengiang/",
             "school": "Hanoi University of Science & Technology",
             "schoolUrl": "https://www.hust.edu.vn",
             "time": "2015 - 2018",
@@ -65,13 +68,15 @@
         },
         {
             "title": "Aptech - High Diploma Software Engineer",
+            "certUrl": "https://www.linkedin.com/in/nguyentiengiang/",
             "school": "Hanoi Aptech",
             "schoolUrl": "http://aptech.vn",
             "time": "2010 - 2013",
-            "courseDescription": "Learn to build software with new technologies (.Net, Java, ...)"
+            "courseDescription": "Learn to build software with new technologies <br>(.Net, Java, ...)"
         },
         {
             "title": "Web development with PHP",
+            "certUrl": "https://www.linkedin.com/in/nguyentiengiang/",
             "school": "IT Plus Academy",
             "schoolUrl": "http://itplus-academy.edu.vn",
             "time": "2011 - 2012",
@@ -79,6 +84,7 @@
         },
         {
             "title": "Bachelor IT Degree",
+            "certUrl": "https://www.linkedin.com/in/nguyentiengiang/",
             "school": "Le Quy Don Technical University",
             "schoolUrl": "http://mta.edu.vn",
             "time": "2010 - 2013",

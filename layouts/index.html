@@ -69,7 +69,7 @@
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<div class="display-t js-fullheight">
 							<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-								<div class="profile-thumb" style="background: url({{ "assets/images/me.jpg" | absURL }});"></div>
+								<div class="profile-thumb" style="background: url({{ "assets/images/me.png" | absURL }});"></div>
 								<h1><span>{{ $data.profile.name }}</span></h1>
 								<h3><span>{{ $data.profile.jobTitle }}{{ safeHTML $data.profile.jobTitleFun }}</span></h3>
 								<p>
@@ -145,7 +145,10 @@
 								<div class="timeline-panel">
 									<div class="timeline-heading">
 										<h3 class="timeline-title">{{ $eVal.title }}</h3>
-										<span class="company"><a target="_newtab" href="{{ $eVal.companyUrl }}">{{ $eVal.company }}</a> ({{ $eVal.time }})</span>
+										<span class="company">
+											<a target="_newtab" href="{{ $eVal.companyUrl }}">{{ $eVal.company }}</a>
+											<br>({{ $eVal.time }})
+										</span>
 									</div>
 									<div class="timeline-body">
 										<p>{{ safeHTML $eVal.jobDescription }}</p>
@@ -170,8 +173,14 @@
 								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">{{ $eVal.title }}</h3>
-										<span class="company"><a target="_newtab" href="{{ $eVal.schoolUrl }}">{{ $eVal.school }}</a> ({{ $eVal.time }})</span>
+										<h3 class="timeline-title">
+											{{ $eVal.title }}
+											<a target="_newtab" href="{{ $eVal.certUrl }}"><i class="icon-eye"></i></a>
+										</h3>
+										<span class="company">
+											<a target="_newtab" href="{{ $eVal.schoolUrl }}">{{ $eVal.school }}</a>
+											<br>({{ $eVal.time }})
+										</span>
 									</div>
 									<div class="timeline-body">
 										<p>{{ safeHTML $eVal.courseDescription }}</p>
@@ -185,7 +194,7 @@
 			</div>
 		</div>
 
-
+<!-- 
 		<div id="fh5co-features" class="animate-box">
 			<div class="container">
 				<div class="services-padding">
@@ -398,7 +407,6 @@
 			</div>
 		</div>
 
-		<!-- 
 		<div id="fh5co-work" class="fh5co-bg-dark">
 			<div class="container">
 				<div class="row animate-box">
@@ -539,7 +547,7 @@
 				</div>
 			</div>
 		</div>
-		 -->
+-->
 
 		<div id="fh5co-started" class="fh5co-bg-dark">
 			<div class="overlay"></div>
