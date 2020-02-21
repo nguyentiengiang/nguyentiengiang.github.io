@@ -6,7 +6,19 @@
     "facebook": "ongteu",
     "twitter": "ongteu",
     "linkedin": "nguyentiengiang",
-    "jobTitle": "Lập trình viên ++",
+    "jobTitle": "Lập trình viên++",
     "jobTitleFun": "<br>(các thứ...)",
-    "intro": ""
+    "introHead": "Chào bạn ^^!",
+    "intro1": "Chào bạn ^^!",
+    "intro2": "Chào bạn ^^!",
+    "works": [
+        {
+            "title": "Developer",
+            "company": "Grooo International",
+            "time": "2016 - Current",
+            "jd": "Offshore website development"
+        }
+    ],
+
+    "end": "End"
 }

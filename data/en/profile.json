@@ -6,7 +6,86 @@
     "facebook": "ongteu",
     "twitter": "ongteu",
     "linkedin": "nguyentiengiang",
-    "jobTitle": "Programmer ++",
+    "jobTitle": "Programmer++",
     "jobTitleFun": "<br>(anything...)",
-    "intro": ""
+    "introHead": "Hi there ^^!",
+    "intro1": "Chào bạn ^^!",
+    "intro2": "Chào bạn ^^!",
+    "works": [
+        {
+            "title": "Developer",
+            "company": "Grooo International JSC",
+            "companyUrl": "https://grooo.vn",
+            "time": "09/2016 - Current",
+            "jobDescription": "Offshore website development"
+        },
+        {
+            "title": "Developer",
+            "company": "Socicom Corporation",
+            "companyUrl": "https://socicom.vn",
+            "time": "10/2015 - 08/2016",
+            "jobDescription": "Offshore website development"
+        },
+        {
+            "title": "Developer",
+            "company": "MSoft [Startup]",
+            "companyUrl": "https://google.com",
+            "time": "12/2013 - 01/2015",
+            "jobDescription": "Develop API & back-end system for member of group include other entertainment project on smartphone Android and iOS using PHP (Slim Framework) & MySQL"
+        },
+        {
+            "title": "R&D Engineer",
+            "company": "Netnam Corporation",
+            "companyUrl": "https://netnam.com",
+            "time": "10/2013 - 03/2014",
+            "jobDescription": "Development system with PHP, Python"
+        }
+    ],
+    "education": [
+        {
+            "title": "Certified ScrumMaster® (CSM®)",
+            "school": "Agile Academy Vietnam",
+            "schoolUrl": "https://hocvienagile.com",
+            "time": "20/08/2018",
+            "courseDescription": "Deploying Scrum and Agile in practice"
+        },
+        {
+            "title": "IT Masters Short Course - Cross-Platform Mobile App Development",
+            "school": "Charles Sturt University",
+            "schoolUrl": "https://www.csu.edu.au",
+            "time": "20/08/2018",
+            "courseDescription": "Self-training Mobile App Development"
+        },
+        {
+            "title": "Computer Engineer",
+            "school": "Hanoi University of Science & Technology",
+            "schoolUrl": "https://www.hust.edu.vn",
+            "time": "2015 - 2018",
+            "courseDescription": "Learn computer engineering"
+        },
+        {
+            "title": "Aptech - High Diploma Software Engineer",
+            "school": "Hanoi Aptech",
+            "schoolUrl": "http://aptech.vn",
+            "time": "2010 - 2013",
+            "courseDescription": "Learn to build software with new technologies (.Net, Java, ...)"
+        },
+        {
+            "title": "Web development with PHP",
+            "school": "IT Plus Academy",
+            "schoolUrl": "http://itplus-academy.edu.vn",
+            "time": "2011 - 2012",
+            "courseDescription": "Web development with PHP & MySQL"
+        },
+        {
+            "title": "Bachelor IT Degree",
+            "school": "Le Quy Don Technical University",
+            "schoolUrl": "http://mta.edu.vn",
+            "time": "2010 - 2013",
+            "courseDescription": "Learn about IT"
+        }
+    ],
+
+
+    "end": "End"
 }

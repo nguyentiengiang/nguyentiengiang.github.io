@@ -42,7 +42,6 @@
 	<!--[if lt IE 9]>
 	<script src="{{ "assets/js/respond.min.js" | absURL }}"></script>
 	<![endif]-->
-
 </head>
 
 <body>
@@ -110,15 +109,9 @@
 						</ul>
 					</div>
 					<div class="col-md-7">
-						<h2>Hello There!</h2>
-						<p>There live the blind texts far from the countries Vokalia and Consonantia, there live the
-							blind texts. Separated they live in bookmarksgrove there live the blind texts far from the
-							countries.</p>
-						<p>Far far away, behind the word mountains, Quos quia provident consequuntur culpa facere
-							ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus
-							itaque adipisci there live the blind texts from the countries Vokalia and Consonantia, there
-							live the blind texts. Quos quia provident consequuntur culpa facere ratione maxime commodi
-							voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+						<h2>{{ $data.profile.introHead }}</h2>
+						<p>{{ $data.profile.intro1 }}</p>
+						<p>{{ $data.profile.intro2 }}</p>
 						<p>
 							<ul class="fh5co-social-icons">
 								<li><a target="_newtab" href="https://twitter.com/{{ $data.profile.twitter }}"><i class="icon-twitter2"></i></a></li>
@@ -135,7 +128,7 @@
 			<div class="container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>My Resume</h2>
+						<h2>{{ $data.label.myresume }}</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -143,48 +136,23 @@
 						<ul class="timeline">
 							<li class="timeline-heading text-center animate-box">
 								<div>
-									<h3>Work Experience</h3>
+									<h3>{{ $data.label.work_experience }}</h3>
 								</div>
 							</li>
-							<li class="animate-box timeline-unverted">
+							{{ range $eIdx, $eVal := $data.profile.works }}
+							<li class="animate-box {{ if (gt (mod $eIdx 2.0) 0) }} timeline-inverted {{ else }} timeline-unverted {{ end }}">
 								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">Senior Developer</h3>
-										<span class="company">Company Name - 2016 - Current</span>
+										<h3 class="timeline-title">{{ $eVal.title }}</h3>
+										<span class="company"><a target="_newtab" href="{{ $eVal.companyUrl }}">{{ $eVal.company }}</a> ({{ $eVal.time }})</span>
 									</div>
 									<div class="timeline-body">
-										<p>Far far away, behind the word mountains, far from the countries Vokalia and
-											Consonantia, there live the blind texts.</p>
+										<p>{{ safeHTML $eVal.jobDescription }}</p>
 									</div>
 								</div>
 							</li>
-							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Junior Developer</h3>
-										<span class="company">Company Name - 2013 - 2015</span>
-									</div>
-									<div class="timeline-body">
-										<p>Far far away, behind the word mountains, they live in Bookmarksgrove right at
-											the coast of the Semantics, a large language ocean.</p>
-									</div>
-								</div>
-							</li>
-							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">UI/UX Designer</h3>
-										<span class="company">Company Name - 2010 - 2012</span>
-									</div>
-									<div class="timeline-body">
-										<p>Far far away, behind the word mountains, far from the countries Vokalia and
-											Consonantia, there live the blind texts.</p>
-									</div>
-								</div>
-							</li>
+							{{ end }}
 						</ul>
 					</div>
 				</div>
@@ -194,61 +162,23 @@
 						<ul class="timeline">
 							<li class="timeline-heading text-center animate-box">
 								<div>
-									<h3>Education</h3>
+									<h3>{{ $data.label.education }}</h3>
 								</div>
 							</li>
-							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							{{ range $eIdx, $eVal := $data.profile.education }}
+							<li class="animate-box {{ if (gt (mod $eIdx 2.0) 0) }} timeline-inverted {{ else }} timeline-unverted {{ end }}">
+								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">Masters Degree</h3>
-										<span class="company">University Name - 2007 - 2009</span>
+										<h3 class="timeline-title">{{ $eVal.title }}</h3>
+										<span class="company"><a target="_newtab" href="{{ $eVal.schoolUrl }}">{{ $eVal.school }}</a> ({{ $eVal.time }})</span>
 									</div>
 									<div class="timeline-body">
-										<p>Far far away, behind the word mountains, they live in Bookmarksgrove right at
-											the coast of the Semantics, a large language ocean.</p>
+										<p>{{ safeHTML $eVal.courseDescription }}</p>
 									</div>
 								</div>
 							</li>
-							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Bachelors Degree</h3>
-										<span class="company">University Name - 2002 - 2006</span>
-									</div>
-									<div class="timeline-body">
-										<p>Far far away, behind the word mountains, far from the countries Vokalia and
-											Consonantia, there live the blind texts.</p>
-									</div>
-								</div>
-							</li>
-							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Diploma Course</h3>
-										<span class="company">College Name - 1999 - 2001</span>
-									</div>
-									<div class="timeline-body">
-										<p>Far far away, behind the word mountains, they live in Bookmarksgrove right at
-											the coast of the Semantics, a large language ocean.</p>
-									</div>
-								</div>
-							</li>
-							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Graduation</h3>
-										<span class="company">College Name - 1994 - 1998</span>
-									</div>
-									<div class="timeline-body">
-										<p>Far far away, behind the word mountains, far from the countries Vokalia and
-											Consonantia, there live the blind texts.</p>
-									</div>
-								</div>
-							</li>
+							{{ end }}
 						</ul>
 					</div>
 				</div>
@@ -468,6 +398,7 @@
 			</div>
 		</div>
 
+		<!-- 
 		<div id="fh5co-work" class="fh5co-bg-dark">
 			<div class="container">
 				<div class="row animate-box">
@@ -608,6 +539,7 @@
 				</div>
 			</div>
 		</div>
+		 -->
 
 		<div id="fh5co-started" class="fh5co-bg-dark">
 			<div class="overlay"></div>
@@ -654,7 +586,7 @@
 					<div class="form-group" id="result-contact"></div>
 
 					<div class="form-group">
-						<input type="submit" id="contact-me-btn" value="Send Message" class="btn btn-primary">
+						<input type="submit" id="contact-me-btn" value="Send Message" class="btn btn-primary" />
 					</div>
 				</form>
 			</div>
@@ -667,8 +599,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<p>&copy; 2017 Free HTML5 Template. All Rights Reserved. <br>Designed by <a
-							href="http://freehtml5.co" target="_blank">FreeHTML5.co</a>
+					<p>&copy; {{ now.Format "2006"}} {{ $data.profile.name }}. All Rights Reserved. (Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a>)
 				</div>
 			</div>
 		</div>

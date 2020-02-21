@@ -7,5 +7,10 @@
     "address": "Địa chỉ",
     "jobs": "Công việc",
     "skills": "Kỹ Năng",
-    "projects": "Dự Án"
+    "projects": "Dự Án",
+    "myresume": "Trình độ và Công việc",
+    "work_experience": "Kinh nghiệm làm việc",
+    "education": "Học vấn",
+
+    "end": "End"
 }

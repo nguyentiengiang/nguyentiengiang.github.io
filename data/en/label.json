@@ -7,5 +7,10 @@
     "address": "Address",
     "jobs": "Công việc",
     "skills": "Skills",
-    "projects": "Projects"
+    "projects": "Projects",
+    "myresume": "My Resume",
+    "work_experience": "Work Experience",
+    "education": "Education",
+
+    "end": "End"
 }
