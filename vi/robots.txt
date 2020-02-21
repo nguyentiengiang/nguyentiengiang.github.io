@@ -1,0 +1,9 @@
+
+User-agent: *
+
+
+Disallow: /vi/
+
+Disallow: /vi/categories/
+
+Disallow: /vi/tags/
