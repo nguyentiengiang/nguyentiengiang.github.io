@@ -14,11 +14,84 @@
     "works": [
         {
             "title": "Developer",
-            "company": "Grooo International",
-            "time": "2016 - Current",
-            "jd": "Offshore website development"
+            "company": "Grooo International JSC",
+            "companyUrl": "https://grooo.vn",
+            "time": "09/2016 - Current",
+            "jobDescription": "Phát triển các website của khách hàng nước ngoài (Japan)"
+        },
+        {
+            "title": "Developer",
+            "company": "Socicom Corporation",
+            "companyUrl": "https://socicom.vn",
+            "time": "10/2015 - 03/2016",
+            "jobDescription": "Phát triển các website của khách hàng nước ngoài (Japan)"
+        },
+        {
+            "title": "Developer",
+            "company": "MSoft [Startup]",
+            "companyUrl": "https://google.com",
+            "time": "12/2013 - 01/2015",
+            "jobDescription": "Phát triển hệ thống API & back-end cho các ứng dụng giải trí trên điện thoại Android và iOS sử dụng PHP (Slim Framework) & MySQL"
+        },
+        {
+            "title": "R&D Engineer",
+            "company": "Netnam Corporation",
+            "companyUrl": "https://netnam.com",
+            "time": "10/2013 - 03/2014",
+            "jobDescription": "Phát triển hệ thống sử dụng PHP, Python"
         }
     ],
+    "education": [
+        {
+            "title": "Certified ScrumMaster® (CSM®)",
+            "certUrl": "http://bcert.me/sqpvwvju",
+            "school": "Agile Academy Vietnam",
+            "schoolUrl": "https://hocvienagile.com",
+            "time": "20/08/2018",
+            "courseDescription": "Deploying Scrum and Agile in practice"
+        },
+        {
+            "title": "IT Masters Short Course - Cross-Platform Mobile App Development",
+            "certUrl": "https://www.linkedin.com/in/nguyentiengiang/",
+            "school": "Charles Sturt University",
+            "schoolUrl": "https://www.csu.edu.au",
+            "time": "20/08/2018",
+            "courseDescription": "Self-training Mobile App Development"
+        },
+        {
+            "title": "Computer Engineer",
+            "certUrl": "https://www.linkedin.com/in/nguyentiengiang/",
+            "school": "Hanoi University of Science & Technology",
+            "schoolUrl": "https://www.hust.edu.vn",
+            "time": "2015 - 2018",
+            "courseDescription": "Learn computer engineering"
+        },
+        {
+            "title": "Aptech - High Diploma Software Engineer",
+            "certUrl": "https://www.linkedin.com/in/nguyentiengiang/",
+            "school": "Hanoi Aptech",
+            "schoolUrl": "http://aptech.vn",
+            "time": "2010 - 2013",
+            "courseDescription": "Learn to build software with new technologies <br>(.Net, Java, ...)"
+        },
+        {
+            "title": "Web development with PHP",
+            "certUrl": "https://www.linkedin.com/in/nguyentiengiang/",
+            "school": "IT Plus Academy",
+            "schoolUrl": "http://itplus-academy.edu.vn",
+            "time": "2011 - 2012",
+            "courseDescription": "Web development with PHP & MySQL"
+        },
+        {
+            "title": "Bachelor IT Degree",
+            "certUrl": "https://www.linkedin.com/in/nguyentiengiang/",
+            "school": "Le Quy Don Technical University",
+            "schoolUrl": "http://mta.edu.vn",
+            "time": "2010 - 2013",
+            "courseDescription": "Learn about IT"
+        }
+    ],
+
 
     "end": "End"
 }
