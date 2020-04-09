@@ -51,20 +51,20 @@
             "courseDescription": "Deploying Scrum and Agile in practice"
         },
         {
-            "title": "IT Masters Short Course - Cross-Platform Mobile App Development",
-            "certUrl": "https://www.linkedin.com/in/nguyentiengiang/",
-            "school": "Charles Sturt University",
-            "schoolUrl": "https://www.csu.edu.au",
-            "time": "20/08/2018",
-            "courseDescription": "Self-training Mobile App Development"
-        },
-        {
             "title": "Computer Engineer",
             "certUrl": "https://www.linkedin.com/in/nguyentiengiang/",
             "school": "Hanoi University of Science & Technology",
             "schoolUrl": "https://www.hust.edu.vn",
             "time": "2015 - 2018",
             "courseDescription": "Learn computer engineering"
+        },
+        {
+            "title": "IT Masters Short Course - Cross-Platform Mobile App Development",
+            "certUrl": "https://www.linkedin.com/in/nguyentiengiang/",
+            "school": "Charles Sturt University",
+            "schoolUrl": "https://www.csu.edu.au",
+            "time": "21/12/2014",
+            "courseDescription": "Self-training Mobile App Development"
         },
         {
             "title": "Aptech - High Diploma Software Engineer",
