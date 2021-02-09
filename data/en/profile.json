@@ -43,6 +43,14 @@
     ],
     "education": [
         {
+            "title": "Advanced Certified ScrumMaster® (A-CSM®)",
+            "certUrl": "http://bcert.me/sisluufeh",
+            "school": "Anja Stiedl - moccasoft.com",
+            "schoolUrl": "https://www.scrumalliance.org/ScrumRedesignDEVSite/media/pdfs/A-CSM_LOs.pdf",
+            "time": "08/02/2021",
+            "courseDescription": "Advanced deploying Scrum and Agile in practice"
+        },
+        {
             "title": "Certified ScrumMaster® (CSM®)",
             "certUrl": "http://bcert.me/sqpvwvju",
             "school": "Agile Academy Vietnam",
