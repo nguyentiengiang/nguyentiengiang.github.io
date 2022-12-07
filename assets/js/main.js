@@ -184,7 +184,7 @@
 	$('#contact-me-btn').on('click', function (e) {
 		e.preventDefault();
 		$.ajax({
-			url: "https://script.google.com/macros/s/AKfycbzyFXNCVNlFz_q93jDppZgAspYJSwtti0G47n3w8o6tJoxYij7D/exec",
+      url: "https://script.google.com/macros/s/AKfycbwV1DMSx2lriQoCpbiFQ9eU0cQYC87kMgyIHjAcabi9/dev",
 			method: "GET",
 			dataType: "json",
 			data: formContact.serialize(),
