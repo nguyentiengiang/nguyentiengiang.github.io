@@ -184,7 +184,7 @@
   // console.log(JSON.stringify(formContact))
   $('#contact-me-btn').on('click', function (e) {
     e.preventDefault();
-    var reqUrl = "https://script.google.coms/macros/s/AKfycbxNkuCCvqXT0JjG8GpKbtbagTbGcQpc-nt90o1uuAxULdmZOohpBBONeP2v92VbzaXHNg/exec?" + formContact.serialize();
+    var reqUrl = "https://script.google.com/macros/s/AKfycbxNkuCCvqXT0JjG8GpKbtbagTbGcQpc-nt90o1uuAxULdmZOohpBBONeP2v92VbzaXHNg/exec?" + formContact.serialize();
     var reqOptions = {
       mode: 'no-cors',
       redirect: "follow",
